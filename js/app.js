@@ -358,7 +358,7 @@ var controller = (function(budgetCtrl, UICtrl) {
     var setupEventListeners = function() {
         var DOM = UICtrl.getDOMstrings();
 
-        document.querySelector(DOM.inputBtn).addEventListener('click', ctrlAddItem);
+        document.querySelector(DOM.inputBtn).addEventListener('click', ctrlAddItem).localStorage.setItem();
 
         document.addEventListener('keypress', function(event) {
             if (event.keyCode === 13 || event.which === 13) {
